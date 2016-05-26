@@ -46,11 +46,11 @@ export default class App extends React.Component {
   render() {
     return (
       <Layout>
-        <NavDrawer>
+        <NavDrawer
           active={this.state.drawerActive}
           pinned={this.state.drawerPinned} permanentAt="xxxl"
           onOverlayClick={this.toggleDrawerActive}
-         >
+        >
           <p>
             Navigation, account switcher, etc. go here.
           </p>
