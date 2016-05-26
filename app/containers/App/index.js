@@ -7,7 +7,10 @@
  */
 
 import React from 'react';
-import { AppBar, Checkbox, IconButton, Layout, NavDrawer, Panel, Sidebar } from 'react-toolbox';
+import AppBar from 'react-toolbox/lib/app_bar';
+import Checkbox from 'react-toolbox/lib/checkbox';
+import IconButton from 'react-toolbox/lib/button';
+import { Layout, NavDrawer, Panel, Sidebar } from 'react-toolbox/lib/layout';
 
 // Import the CSS reset, which HtmlWebpackPlugin transfers to the build folder
 import 'sanitize.css/sanitize.css';

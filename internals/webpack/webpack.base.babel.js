@@ -32,6 +32,9 @@ module.exports = (options) => ({
       include: /node_modules/,
       loaders: ['style-loader', 'css-loader'],
     }, {
+      test: /\.scss$/,
+      loaders: ['style-loader', 'css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]', 'sass-loader?sourceMap'],
+    }, {
       test: /\.jpe?g$|\.gif$|\.png$|\.svg$/i,
       loader: 'url-loader?limit=10000',
     }, {
@@ -78,6 +81,7 @@ module.exports = (options) => ({
       '.js',
       '.jsx',
       '.react.js',
+      '.scss',
     ],
     packageMains: [
       'jsnext:main',
